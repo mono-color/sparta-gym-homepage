@@ -1,0 +1,76 @@
+.main_photo_box {
+  width: 100%;
+  padding: 30px 0px;
+  background-color: rgb(255, 255, 255, 0.5);
+  margin-top: 30px;
+}
+.main_photo > p {
+  color: rgb(175, 0, 0);
+  background-color: rgba(241, 157, 47, 0.9);
+  text-align: left;
+  padding: 15px 0px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.photo_list {
+  display: flex;
+  justify-content: center;
+}
+.photo_info {
+  width: 400px;
+  height: 300px;
+  margin: 0px 50px;
+  background-image: url("../image/bodyprofile1.jpeg");
+}
+.photo_info > img {
+  width: 400px;
+  height: 300px;
+}
+#img-bp1 {
+  width: 400px;
+  height: 300px;
+  background-size: 400px 300px;
+  background-repeat: no-repeat;
+}
+#img-bp2 {
+  width: 400px;
+  height: 300px;
+  background-size: 400px 300px;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1290px) {
+  .main_photo_box {
+    width: 100%;
+  }
+}
+.photo_list {
+  overflow: hidden;
+}
+@media (max-width: 1800px) {
+  .photo_list {
+    display: inline-block;
+  }
+  .photo_info {
+    margin-top: 20px;
+  }
+}
+.location {
+  width: 100%;
+}
+.location > p {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(175, 0, 0);
+  padding-bottom: 30px;
+}
+.chest_trainning {
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+  font-size: 50px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}

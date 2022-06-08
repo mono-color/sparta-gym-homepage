@@ -1,0 +1,141 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 0;
+  color: black;
+}
+body {
+  height: 100vh;
+  text-align: center;
+  background: url("../image/teamsparta.jpeg") no-repeat center;
+  background-size: cover;
+  /* background-size: contain; */
+  /* background-position-y: 0px; */
+  /* background-repeat: repeat-y; */
+  /* background-color: rgba(228, 228, 120, 0.6); */
+}
+.header_logo {
+  color: rgb(175, 0, 0);
+}
+.header {
+  background-color: rgba(241, 157, 47, 0.9);
+  width: 100%;
+  height: 200px;
+}
+.header_title {
+  background-color: none;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding-top: 20px;
+}
+.header_logo {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+.category {
+  width: 100%;
+  height: 90px;
+  position: relative;
+  top: -25px;
+}
+.category-line {
+  width: 1280px;
+  height: 90px;
+  display: flex;
+}
+.category-line > li {
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: rgb(221, 126, 1);
+  font-weight: bold;
+  text-align: center;
+}
+.category-line > li > a {
+  position: relative;
+  top: 10px;
+  color: rgb(175, 0, 0);
+  font-size: 20px;
+}
+.category-line > li > ul {
+  padding: 20px 0px;
+  background: linear-gradient(
+    to bottom,
+    rgba(247, 175, 81, 0.2),
+    rgba(241, 157, 47, 0.8)
+  );
+  border-radius: 20px;
+}
+.category-line > li > ul > li {
+  margin-top: 20px;
+}
+.category-line li ul {
+  display: none;
+}
+.category-line li:hover ul {
+  display: block;
+  animation: showdown 0.3s linear;
+  animation-fill-mode: both;
+  position: relative;
+}
+@keyframes showdown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.category-line > li > ul > li > a:hover {
+  color: white;
+}
+.category-line > li > ul > li > a:active {
+  color: gray;
+}
+
+.category-line > li:hover {
+  background-color: rgb(245, 78, 0);
+}
+.category-line > li:active {
+  background-color: rgb(245, 29, 0);
+}
+
+/* 반응형 추가 */
+@media (max-width: 1320px) {
+  #wrap {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .category {
+    width: 100%;
+    /* background-color: tomato; */
+  }
+  .category-line {
+    width: 100%;
+    /* background-color: tomato; */
+  }
+}
+
+.header_title > div {
+  width: 70px;
+  height: 70px;
+  display: inline;
+  margin-right: 50px;
+}
+.header_title img {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: 20px;
+}
+.header_title a {
+  display: inline;
+}

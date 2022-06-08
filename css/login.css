@@ -1,0 +1,87 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  text-align: center;
+  background: url("../image/teamsparta.jpeg") no-repeat center;
+  background-size: cover;
+  background-size: 600px 600px;
+}
+main {
+  position: relative;
+  top: 50%;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 40px;
+  padding: 10px;
+}
+main > h1 {
+  padding: 20px;
+  color: black;
+}
+label {
+  text-align: left;
+  margin-left: 90px;
+  display: block;
+}
+.caption_ul {
+  display: flex;
+  padding: 10px;
+}
+.caption_ul > li {
+  list-style: none;
+}
+.caption_ul a {
+  color: rgb(54, 54, 54);
+  text-decoration: none;
+}
+.caption_ul a:hover {
+  color: gray;
+}
+.caption_ul a:active {
+  color: white;
+}
+.login_box label {
+  padding: 5px;
+  font-size: 15px;
+  background-color: aqua;
+  font-weight: bold;
+  color: black;
+}
+.login_box input {
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  font-weight: bold;
+}
+.login_box input::placeholder {
+  color: rgb(14, 107, 112);
+}
+
+.bnt_box > button {
+  width: 400px;
+  height: 40px;
+  border: none;
+  background-color: lightgreen;
+  font-size: 20px;
+  font-weight: bold;
+}
+#btn_log:hover {
+  color: gray;
+}
+#btn_log:active {
+  color: white;
+}
+.body,
+.login_box label,
+.login_box input,
+.bnt_box > button {
+  background-color: transparent;
+}
+.login_box > input:focus {
+  outline: none;
+}
